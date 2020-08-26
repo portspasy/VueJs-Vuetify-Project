@@ -18,6 +18,12 @@ Vue.use(VueRouter)
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
+  {
+    path: '/calendar',
+    name: 'Calendar',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "calendar" */ '../views/Calendar.vue')
+  }
 ]
 
 const router = new VueRouter({
