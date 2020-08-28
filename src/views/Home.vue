@@ -5,7 +5,7 @@
         v-model="drawer"
         :color="color"
         :expand-on-hover="expandOnHover"
-        :mini-variant="miniVariant"
+        :mini-variant="miniVariant" 
         :right="right"
         :permanent="permanent"
         absolute
@@ -37,8 +37,8 @@
         </v-list>
 
         <template v-slot:append>
-          <div class="pa-2">
-            <v-btn block>Logout</v-btn>
+          <div class="pa-4">
+            <v-btn block >Logout</v-btn>
           </div>
         </template>
       </v-navigation-drawer>
