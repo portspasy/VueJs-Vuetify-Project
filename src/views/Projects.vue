@@ -10,6 +10,10 @@
         <v-col md="6" sm="12" cols="12">
           <v-btn block class="primary">Button 2</v-btn>
         </v-col>
+
+        <v-col cols="12" style="width: 100%; max-width: 100%; overview: hidden;">
+          <Map/>
+        </v-col>
       </v-row>
 
       <v-card flat class="pa-3" outlined>
@@ -38,5 +42,8 @@
 </template>
 
 <script>
-export default {};
+import Map from "@/components/Map";
+export default {
+   components: { Map },
+};
 </script>
