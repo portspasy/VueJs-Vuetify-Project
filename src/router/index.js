@@ -29,6 +29,13 @@ Vue.use(VueRouter)
     name: 'Calendar',
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "calendar" */ '../views/Calendar.vue')
+  },
+
+  // otherwise redirect to Error 404
+  { path: '*', 
+    name: '404',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "404" */ '../views/404.vue')
   }
 ]
 
