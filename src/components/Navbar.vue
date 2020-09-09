@@ -45,6 +45,7 @@ export default {
         { title: "My Projects", icon: "mdi-image", route: "/projects" },
         { title: "Team", icon: "mdi-help-box", route: "/team" },
         { title: "Calendar", icon: "mdi-calendar", route: "/calendar" },
+        { title: "Table", icon: "mdi-calendar", route: "/table" },
       ],
     };
   },
