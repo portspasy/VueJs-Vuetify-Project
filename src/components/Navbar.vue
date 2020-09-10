@@ -42,10 +42,15 @@ export default {
       drawer: false,
       items: [
         { title: "Dashboard", icon: "mdi-view-dashboard", route: "/" },
+        { title: "Doctors", icon: "mdi-doctor", route: "/doctors" },
+        { title: "Patients", icon: "mdi-account", route: "/patients" },
+        { title: "Appointements", icon: "mdi-calendar-clock", route: "/appointements" },
+        { title: "Reports", icon: "mdi-chart-bar", route: "/reports" },
+        { title: "Settings", icon: "mdi-wrench", route: "/settings" },
+        { title: "Help", icon: " mdi-help-circle", route: "/help" },
         { title: "My Projects", icon: "mdi-image", route: "/projects" },
-        { title: "Team", icon: "mdi-help-box", route: "/team" },
-        { title: "Calendar", icon: "mdi-calendar", route: "/calendar" },
-        { title: "Table", icon: "mdi-calendar", route: "/table" },
+        { title: "Table", icon: "mdi-table-edit", route: "/table" },
+        { title: "Logout", icon: "mdi-logout", route: "/login" },
       ],
     };
   },
@@ -57,4 +62,3 @@ export default {
   z-index: 9999;
 }
 </style>
-

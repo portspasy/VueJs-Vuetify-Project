@@ -1,6 +1,6 @@
 <template>
-  <div class="team">
-    <h1>This is an Team Page</h1>
+  <div class="doctors">
+    <h1>This is an Doctors Page</h1>
 
     <v-container fluid class="my-5">
       <v-row>
@@ -10,8 +10,8 @@
           sm="6"
           md="4"
           lg="3"
-          v-for="person in team"
-          :key="person.name"
+          v-for="doctor in doctors"
+          :key="doctor.name"
         >
           <v-card text class="ma-3 elevation-5">
             <v-responsive class="pa-3">
@@ -20,11 +20,11 @@
               </v-avatar>
             </v-responsive>
             <v-card-title>
-              {{ person.name }}
+              {{ doctor.name }}
             </v-card-title>
 
             <v-card-subtitle>
-              {{ person.role }}
+              {{ doctor.role }}
             </v-card-subtitle>
 
             <v-card-actions>
@@ -42,7 +42,7 @@
 export default {
   data() {
     return {
-      team: [
+      doctors: [
         {
           name: "Name 1",
           role: "Web developer",
