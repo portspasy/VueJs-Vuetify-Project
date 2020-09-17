@@ -13,6 +13,7 @@
 
         <v-col cols="12" style="width: 100%; max-width: 100%; overview: hidden;">
           <Map/>
+          <Charts/>
         </v-col>
       </v-row>
 
@@ -23,7 +24,8 @@
 
 <script>
 import Map from "@/components/Map";
+import Charts from "@/components/Charts";
 export default {
-   components: { Map },
+   components: { Map, Charts },
 };
 </script>
